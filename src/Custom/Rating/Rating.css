@@ -1,0 +1,31 @@
+.rating {
+  display: inline-block;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+.star {
+  font-size: 60px;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.star:hover {
+  color: #f1911b; /* Color when a star or any star to its right is hovered */
+}
+
+.star.filled {
+  color: #f1911b; /* Color for active stars */
+}
+
+/* Default color for the stars */
+.star {
+  color: #ccc;
+}
+
+@media (max-width: 425px) {
+  .star {
+    font-size: 40px;
+    padding: 0 5px;
+  }
+}

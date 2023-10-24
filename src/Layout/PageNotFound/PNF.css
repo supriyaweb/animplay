@@ -1,0 +1,29 @@
+.pnf-page img{
+    width: 60%;
+    height: auto;
+}
+.pnf-page h1{
+    color: #fff;
+    margin: 30px;
+    font-weight: 900;
+}
+.pnf-text {
+    width: 100%;
+    height: 300px;
+    margin-top: -170px;
+    text-decoration: none;
+}
+.pnf-text p {
+    font-size: 22px;
+    max-width: 800px;
+    margin: auto;
+    font-weight: 400;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.pnf-text button {
+    margin: auto;
+}
+.pnf-text a {
+    text-decoration: none;
+}

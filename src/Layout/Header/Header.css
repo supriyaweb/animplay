@@ -1,0 +1,406 @@
+.my-header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    /* padding: 15px 0; */
+    z-index: 100;
+    /* background-color: #000000c3; */
+    background-color: #000000e6;
+} 
+.header-wrapper{
+    position: relative;
+    width: calc(100% - 100px);
+    margin-left: 50px;
+} 
+.logo-wrap {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    padding: 14px 0;
+}
+.logo-wrap a {
+    display: inline-flex;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    transition : all 0.3s ease-out;
+}
+.logo-wrap a p {
+    margin-top: 15px;
+    padding-left: 8px;
+}
+.logo-wrap a span{ 
+    width: 100%;
+    height: 100%;
+    /* display: table-cell; */
+    border-radius: 50%;
+    outline: 1px solid #000;
+    outline-offset: -1px;
+    border: none;
+    box-shadow: 0px 0px 14px -7px #f09819;
+    background-size: 200% auto;
+    background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+}
+.logo-wrap a span img{ 
+    width: 40px;
+}
+.logo-wrap a:hover span{
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 2px rgba(240, 152, 25, 0.5);
+    background-position: right center;
+    transition : all 0.5s ease-out;
+}
+.logo-wrap a:hover{
+    letter-spacing: 2px;
+    transition : all 0.3s ease-out;
+}
+.nav-but-wrap{ 
+    position: relative;
+    /* display: inline-block; */
+    float: right;
+    /* padding-left: 10px;
+    padding-top: 10px; */
+    padding: 15px 0 15px 15px;
+    margin-top: 7px;
+    transition : all 0.3s ease-out;
+}
+.menu-icon {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    display: block;
+}
+.menu-icon_line {
+    height: 2px;
+    width: 30px;
+    display: block;
+    background-color: rgba(255,255,255,0.8);
+    margin-bottom: 7px;
+    cursor: pointer;
+    -webkit-transition: background-color .5s ease, -webkit-transform .2s ease;
+    transition: background-color .5s ease, -webkit-transform .2s ease;
+    transition: transform .2s ease, background-color .5s ease;
+    transition: transform .2s ease, background-color .5s ease, -webkit-transform .2s ease;
+}
+.menu-icon_line-left {
+    width: 16.5px;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.menu-icon_line-right {
+    width: 16.5px;
+    float: right;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    transition: all 200ms linear;
+}
+.menu-icon:hover .menu-icon_line-left,
+.menu-icon:hover .menu-icon_line-right {
+    width: 30px;
+}
+/* //////////////////////showing nav/////////////////////// */
+.my-nav {
+    display: flex;
+}
+.my-nav .nav-content{
+    position: absolute;
+    right: calc(0% + 150px);
+    top: 12px;
+}
+.my-nav .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.my-nav .nav-list_item a { 
+    position: relative;
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 2;
+    display: block;
+    text-transform: capitalize;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear; 
+}
+.my-nav .nav-list_item a.mainbtn {
+    color: rgba(255,255,255,0.7);
+}
+/* .nav-list_item:nth-child(4){
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+} */
+.li-off {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.li-off span:first-child {
+    color: #fff;
+    text-transform: uppercase;
+    opacity: .5;
+}
+.li-off span:nth-last-child(2) {
+    position: absolute;
+    right: 170px;
+    text-transform: uppercase;
+}
+.li-off span:nth-last-child(2) {
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+    text-align: center;
+    animation: blink 12s infinite;
+    -webkit-animation: blink 12s infinite;
+}
+/*-- Animation Keyframes --*/
+@-webkit-keyframes blink {
+    20%,24%,55% {
+      color: #111;
+      text-shadow: none;
+    }
+    0%,19%,21%,23%,25%,54%,56%,100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+    opacity: .5;
+    }
+}
+@keyframes blink {
+    20%,24%,55% {
+      color: #111;
+      text-shadow: none;
+    }
+    0%,19%,21%,23%,25%,54%,56%,100% {
+  /*     color: #fccaff;
+      text-shadow: 0 0 5px #f562ff, 0 0 15px #f562ff, 0 0 25px #f562ff,
+        0 0 20px #f562ff, 0 0 30px #890092, 0 0 80px #890092, 0 0 80px #890092; */
+    text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+    opacity: .5;
+    }
+}
+
+.toggle-nav{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+}
+.nav-list_item span{
+    padding-right: 10px;
+    color: rgba(255,255,255,0.5);
+}
+
+.my-nav .nav-list_item a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    bottom: -5px;
+    transition: width .3s;
+}
+.my-nav .nav-list_item a:hover:before {
+    width: 40%;
+}
+/* .active-nav {
+    color: #ffffff;
+} */
+.my-nav .nav-list_item a.active:before {
+    position: absolute;
+    content: "";
+    width: 40%;
+    height: 1px;
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    bottom: -5px;
+}
+.my-nav .nav-list_item a:hover{
+    color: #fff;
+}
+.my-nav .nav-list_item a:active, .my-nav .nav-list_item a:visited{
+    color: #fff;
+}
+
+/* /////////////////////showing nav toggler///////////////////// */
+
+/* nav active */
+
+.nav-active .my-nav li.li-off {
+    display: none;
+}
+.nav-active .my-nav {
+    display: flex;
+}
+.nav-active .my-nav .toggle-nav{
+    visibility: visible;
+    position: initial;
+    opacity: 1;
+}
+.nav-active .nav-content {
+    position: fixed;
+    top: 50%;
+    margin-top: 20px;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+.nav-active .nav-list {
+    display: inline-block;
+    background: #00050d;
+    padding: 40px 200px 40px 60px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 14px -7px rgba(240, 152, 25, 0.3);
+}
+.nav-active .nav-list:after {
+    content: "";
+    width: 236px;
+    height: 206px;
+    background: url("../../../public/assets/brand/chibi-hime.png") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    top: 0px;
+    position: absolute;
+    display: block;
+    transform: translateX(270px) translateY(298px) scale(1);
+}
+.nav-active .nav-list_item a {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: left;
+}
+.nav-active .nav-list_item a:before {
+    border-bottom: 2px solid rgba(255,255,255,0.5);
+    bottom: 0;
+}
+.nav-active .nav-list_item a.active {
+    margin-bottom: 10px;
+}
+.nav-active .nav-list_item a.active:before {
+    height: 1px;
+    border-bottom: 5px solid rgba(255,255,255,0.5);
+    bottom: -3px;
+}
+
+/* nav background */
+
+.my-nav:before, .my-nav:after {
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-size: 200% auto;
+    background-image: linear-gradient(45deg, rgba(255, 81, 47, 0.5) 0%, rgba(240, 152, 25, 0.2)  51%, rgba(255, 81, 47, 0.2)  100%);
+    border-bottom-left-radius: 200%;
+    border-bottom-right-radius: 200%;
+    z-index: -1;
+    -webkit-transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+    transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+    transition: transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
+    -webkit-transform: translateX(0%) translateY(-100%);
+            transform: translateX(0%) translateY(-100%);
+}            
+.my-nav:after {
+    background: rgba(4, 10, 18, 0.8);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+}            
+.my-nav:before {
+    -webkit-transition-delay: .2s;
+            transition-delay: .2s;
+}            
+
+
+.nav-active .my-nav {
+    visibility: visible;
+}    
+.nav-active .my-nav:before, .nav-active .my-nav:after {
+    -webkit-transform: translateX(0%) translateY(0%);
+            transform: translateX(0%) translateY(0%);
+    border-radius: 0;        
+}    
+.nav-active .my-nav:after {
+    -webkit-transition-delay: .1s;
+    transition-delay: .1s;
+}    
+.nav-active .my-nav:before {
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+/* toggler icon cross */
+
+.nav-active .menu-icon_line {
+    background-color: #fff;
+    -webkit-transform: translate(0px, 0px) rotate(-45deg);
+            transform: translate(0px, 0px) rotate(-45deg);
+}          
+.nav-active .menu-icon_line-left {
+    width: 15px;
+    -webkit-transform: translate(2px, 4px) rotate(45deg);
+            transform: translate(2px, 4px) rotate(45deg);
+}            
+.nav-active .menu-icon_line-right {
+    width: 15px;
+    float: right;
+    -webkit-transform: translate(-3px, -3.5px) rotate(45deg);
+            transform: translate(-3px, -3.5px) rotate(45deg);
+}            
+.nav-active .menu-icon:hover .menu-icon_line-left,
+.nav-active .menu-icon:hover .menu-icon_line-right {
+    width: 15px;
+}
+
+/* /////////////////////media///////////////////// */
+
+@media screen and (max-width: 1024px) {
+    .nav-list_item span{
+        padding-right: 0px;
+        display: none;
+    }
+}
+@media screen and (max-width: 992px) {
+    .my-nav.dis-none{
+        display: none;
+    }
+    .nav-active .dis-none{
+        display: flex;
+    }
+}
+@media screen and (max-width: 600px) {
+    .nav-active .nav-list {
+        background-color: transparent;
+        box-shadow: none;
+    }
+}
+@media screen and (max-width: 450px) {
+    .header-wrapper {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+    }
+}

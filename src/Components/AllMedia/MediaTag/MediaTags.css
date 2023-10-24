@@ -1,0 +1,87 @@
+.similar_card h2 {
+    text-align: left;
+    /* margin: auto; */
+    margin: 100px 0 40px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgba(74, 74, 74, 1);
+    background-color: #ffffff30;
+    width: fit-content;
+    padding: 8px 10px 2px 10px;
+    border-radius: 10px 10px 0 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    box-shadow: rgb(38, 57, 77) 0px 10px 20px -13px;
+    /* box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+    /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
+}
+
+.similar_card .card {
+    /* border: 1px solid hsl(35, 88%, 52%) !important; */
+    /* box-shadow: 0px 0px 10px -2px #FF512F; */
+    padding-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px -4px #46466f;
+    margin: 20px 0 15px 0;
+    background-color: rgba(255,255,255,0.5);
+    border-top: 2px solid rgba(255,255,255,0.5);
+    border-left: 2px solid rgba(255,255,255,0.5);
+    transition: .3s;
+}
+.similar_card .card .similar_cardimg {
+    overflow: hidden;
+    border-radius: 8px;
+    transition: .5s;
+}
+.similar_card .card img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    transition: .5s;
+}
+.sim_mov_name {
+    margin-bottom: 20px;
+}
+.sim_mov_name h6 {
+    font-size: 17px;
+}
+
+.similar_card .card:hover {
+    background-color: rgba(255,255,255,1) !important;
+    transform: translateY(4px) scale(1.05);
+    transition: .3s;
+}
+.similar_card .card:hover img {
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.15) translateX(10px);
+    transition: .5s;
+}
+
+.Loadbt {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.hidebox {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.hidebox span {
+    display: block;
+    position: absolute;
+    bottom: 78px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 215px;
+    margin: auto;
+    margin-top: 20px;
+    background-color: #d1c8fc;
+    background: linear-gradient(180deg, rgba(209,200,252,0) 0%, rgba(209,200,252,1) 80%);
+    mix-blend-mode: normal;
+}

@@ -1,0 +1,100 @@
+.watch_media_h1 {
+    margin: 110px 0 40px 0;
+}
+.watch_media h1{
+    margin: auto;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: rgba(74, 74, 74, 1);
+    background-color: #ffffff30;
+    width: fit-content;
+    padding: 8px 10px 2px 10px;
+    border-radius: 10px 10px 0 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    box-shadow: rgb(38, 57, 77) 0px 10px 20px -13px;
+}
+
+.watch_media .watch-card h5 {
+    font-weight: 600;
+    margin-top: 20px;
+    /* color: rgba(151, 151, 151, 0.201); */
+    color: rgba(141, 141, 141, 1);
+}
+
+/* .watch_media .watch-card h6 {
+    font-weight: 600;
+    margin-top: 20px;
+    color: rgba(255,255,255,0.5);
+} */
+
+.watch_media .watch-card a{
+    text-decoration: none;
+}
+
+.watch_media .card {
+    /* border: 1px solid hsl(35, 88%, 52%) !important; */
+    /* box-shadow: 0px 0px 10px -2px #FF512F; */
+    padding-bottom: 5px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px -4px #46466f;
+    margin: 20px 0 20px 0;
+    background-color: rgba(255,255,255,0.8) !important;
+    border-top: 2px solid rgba(255,255,255,0.8);
+    border-left: 2px solid rgba(255,255,255,0.8);
+    transition: .3s;
+}
+.watch_media .card .watch_cardimg {
+    overflow: hidden;
+    border-radius: 8px;
+    transition: .5s;
+}
+.watch_media .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+    transition: .5s;
+}
+
+.watch_media .card:hover {
+    background-color: rgba(255,255,255,1) !important;
+    transform: translateY(6px) scale(1.05);
+    transition: .3s;
+}
+.watch_media .card:hover img {
+    object-fit: cover;
+    object-position: center;
+    transform: scale(1.15) translateX(10px);
+    transition: .5s;
+}
+
+
+.watch_media .card h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.watch_media .card p {
+    margin: 5px 0;
+    text-decoration: none;
+}
+
+.watch_media .mov_name {
+    text-align: left;
+}
+.watch_media .watch_rate {
+    margin-bottom: 30px;
+    display: flex;
+    margin-top: -5px;
+}
+.watch_media .watch_rate .star-rating, .watch_media .watch_rate span {
+    font-size: 13px;
+}
+
+
+@media (max-width: 768px) {
+    
+}

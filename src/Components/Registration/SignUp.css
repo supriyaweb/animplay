@@ -1,0 +1,193 @@
+.wrap-register {
+    background-image: url("../../../public/assets/group.jpg");
+    background-attachment: local;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.wrapper {
+    font-family: Roboto, sans-serif;
+    color: #515a6e;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    margin-bottom: -100px;
+}
+
+.wrap-register a {
+    cursor: pointer;
+    color: #495bff;
+    text-decoration: none !important;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.wrap-register a:hover {
+    color: #f27474;
+}
+
+.wrap_form {
+    position: relative;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 40px;
+    padding: 40px 35px;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); */
+    width: 420px;
+    box-sizing: border-box;
+    overflow: hidden;
+    box-shadow: rgb(136 165 191 / 33%) 6px 2px 16px 0px, rgb(255 255 255 / 53%) -6px -2px 16px 0px;
+    /* box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset; */
+}
+.wrap_form:before {
+    content: "";
+    width: 236px;
+    height: 206px;
+    background: url("../../../public/assets/brand/neko-yuzu-r.png") no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    background-color: transparent;
+    top: 0px;
+    position: absolute;
+    display: block;
+    transform: translateX(203px) translateY(286px) scale(.4);
+    z-index: 3;
+}
+/* .wrap_form:before {
+    content: "";
+    position: absolute;
+    left: -62px;
+    top: -95px;
+    right: 0;
+    background-color: #b2fde1a6;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    z-index: 1;
+    filter: blur(50px);
+} */
+.wrap_form:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(255, 255, 255);
+    background-image: linear-gradient(145deg, rgb(102 102 102 / 30%) 0%, rgb(25 25 25) 100%);
+    border-radius: 0px;
+    height: 10px;
+    width: 100%;
+    z-index: 1;
+}
+.card_form {
+    position: relative;
+    z-index: 2;
+    text-align: left;
+}
+.card_title {
+    font-size: 24px;
+    margin: 0;
+}
+.card_title-info {
+    font-size: 14px;
+    margin: 7px 0 10px;
+}
+
+.card_button {
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 35px 0 25px;
+    color: #fff;
+    background: rgb(255, 97, 0);
+    background-image: linear-gradient(145deg, rgba(255,97,0,1) 0%, rgba(255,80,80,1) 100%);
+    box-shadow: 0 2px 12px -3px #ff5050;
+    opacity: 0.9;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.card_button:hover {
+    opacity: 1;
+    box-shadow: 0 2px 2px -3px #ff5050;
+}
+
+.card_info {
+    font-size: 14px;
+}
+.card_info p {
+    margin-bottom: 0px;
+}
+
+.my_input {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-top: 5px;
+}
+/* .my_input + .my_input {
+    margin-top: 10px;
+} */
+
+.wrap-register label.input_label {
+    color: #99aab5;
+    position: absolute;
+    top: 30px;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.wrap-register input.input_field {
+    border: 0;
+    padding: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 2px solid #99aab5;
+    font: inherit;
+    font-size: 14px;
+    line-height: 25px;
+}
+.wrap-register input.loff {
+    border-bottom: 0px solid #99aab5;
+}
+.wrap-register input.input_field:focus, .wrap-register input.input_field:active {
+    outline: 0;
+    border-bottom-color: #515a6e;
+}
+.wrap-register input.input_field:focus ~ label.input_label, .wrap-register input.input_field:active ~ label.input_label {
+    color: #515a6e;
+}
+.wrap-register input.input_field:focus ~ label.input_label, .wrap-register input.input_field:active ~ label.input_label {
+    color: #515a6e;
+}
+.wrap-register input.input_field:valid ~ label.input_label {
+    color: #99aab5;
+}
+

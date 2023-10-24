@@ -1,0 +1,128 @@
+.footer {
+    --color-background: #000;
+    --color-box-background: #171719;
+    color: var(--color-default);
+    background-color: var(--color-background);
+    font-size: 14px;
+    padding-bottom: 60px;
+    margin-top: 100px;
+}
+
+.footer .footer-top {
+    padding-top: 100px;
+    padding-bottom: 60px;
+    text-align: left;
+}
+  
+.footer .footer-about .logo {
+    line-height: 0;
+    margin-bottom: 45px;
+    text-decoration: none;
+    color: #fff;
+}
+  
+.footer .footer-about .logo img {
+    max-height: 40px;
+    margin-right: 6px;
+}
+  
+.footer .footer-about .logo span {
+    color: var(--color-secondary);
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--font-primary);
+}
+  
+.footer .footer-about p {
+    font-size: 14px;
+    font-family: var(--font-primary);
+    color: rgba(255,255,255,0.5);
+}
+  
+.footer .social-links a .btn-ico {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+  
+.footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 20px;
+    color: rgba(255,255,255,0.8);
+}
+  
+.footer .footer-links {
+    margin-bottom: 30px;
+}
+  
+.footer .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+.footer .footer-links ul i {
+    padding-right: 2px;
+    font-size: 12px;
+    line-height: 0;
+}
+  
+.footer .footer-links ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+}
+  
+.footer .footer-links ul li:first-child {
+    padding-top: 0;
+}
+  
+.footer .footer-links ul a {
+    color: rgba(var(--color-default-rgb), 0.8);
+    display: block;
+    line-height: 1;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+  
+.footer .footer-links ul a:hover {
+    color: #fff;
+}
+  
+.footer .footer-contact p {
+    color: rgba(255,255,255,0.5);
+
+}
+  
+.footer .copyright {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: var(--color-box-background);
+    border-radius: 20px 20px 0 20px;
+}
+  
+.footer .copyright p {
+    margin-bottom: 0;
+    color: rgba(255,255,255,0.3);
+}
+  
+.footer .credits {
+    margin-top: 6px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.3);
+}
+.footer .credits a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+}
+.footer .credits a:hover {
+    color: rgba(255,255,255,1);
+}
+

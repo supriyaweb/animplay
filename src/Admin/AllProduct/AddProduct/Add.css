@@ -1,0 +1,350 @@
+.wrap {
+    /* background: linear-gradient(149deg, rgb(240 247 255) 0%, rgb(156 165 235) 100%); */
+    padding: 60px 0 80px;
+}
+.wrap h4 {
+    margin-bottom: 40px;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    /* color: rgba(255,255,255,0.2); */
+    color: rgba(141, 141, 141, 1);
+}
+.add {
+    background-color: #cccdce;
+    width: 75%;
+    margin: auto;
+    padding: 50px 60px;
+    border-radius: 5px;
+    border: 0.05em solid white;
+    /* box-shadow: 0px 0px 14px -7px #f09819; */
+    box-shadow: 3px 3px 15px -4px #46466f;
+    /* background: linear-gradient(180deg, rgb(125 134 150) 0%, rgb(230, 230, 230) 100%); */
+    background: linear-gradient(180deg, rgb(152, 159, 171) 0%, rgb(230, 230, 230) 100%);
+}
+.add form input, .add form select, .add form textarea {
+    background-color: #fff;
+    margin: 5px 8px 25px 8px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #8d778c;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    padding: 5px 10px;
+}
+.add form input:focus, .add form select:focus, .add form textarea:focus {
+    outline: 0;
+    border-bottom-color: #000;
+}
+.add form input:valid, .add form select:valid, .add form textarea:valid {
+    outline: 0;
+}
+.add form input::placeholder {
+    color: #8d778c;
+    font-size: 15px;
+}
+.add form input[type=submit] {
+    margin-bottom: 0px;
+    background-color: #8f99b2;
+    padding: 6px;
+    background: linear-gradient(90deg, rgba(115, 122, 142, 0.5) 0%, rgba(110, 69, 105, 0.5) 100%);
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.add form label.fix-margin input[type=radio] {
+    margin-bottom: 8px;
+}
+
+.wrap .form-group{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 20px; */
+    justify-content: space-around;
+    align-items: center;
+}
+.wrap .form-group label{
+    display: flex;
+    flex-flow: wrap;
+    gap: initial;
+    flex: auto;
+    color: #131313;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.wrap button{
+    margin: auto;
+}
+
+
+/* Styles for the fieldset and legend */
+fieldset {
+    margin-bottom: 20px !important;
+    border: 2px solid #0a0b191c !important;
+    border-radius: 5px;
+    padding: 0px 20px 20px 20px !important;
+}
+legend {
+    float: none !important;
+    width: initial !important;
+    margin-bottom: 0px !important;
+    font-size: calc(1.175rem + 0.1vw) !important;
+    line-height: inherit;
+    padding: 0;
+    font-weight: 600;
+    color: #131313;
+}
+
+legend~div{
+    margin-top: 30px;
+}
+/* legend~div* {
+    background-color: #434851;
+} */
+
+/* Styles for the disabled fieldset and legend */
+input:disabled {
+    opacity: 0.5;
+}
+textarea:disabled {
+    opacity: 0.5;
+}
+fieldset:disabled {
+  opacity: 0.7;
+}
+fieldset:disabled legend {
+    color: #b3a0b6;
+}
+
+fieldset button{
+    width: 100%;
+    height: auto;
+}
+fieldset .div-bt{
+    text-align: right;
+    border-bottom: 2px solid #0a0b191c;
+    margin: 0 10px 15px 10px;
+    padding-bottom: 15px;
+}
+fieldset .div-btfx{
+    border-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+/* ////////////////////////////// */
+
+.add form input[type=checkbox], .add form input[type=radio] {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    accent-color: #fff;
+}
+.add form .checkbox-group label,
+.add form .radio-group label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 15px;
+    user-select: none;
+    user-select: none;
+    font-weight: 600;
+    font-family: system-ui;
+    color: #494a4a;
+    transform: translateY(-4px);
+}
+.add form input[type=checkbox]:hover+label,
+.add form input[type=radio]:hover+label {
+    color: #000;
+}
+
+.add form input[type=range]{
+    accent-color: #434851;
+}
+
+/* .add form .checkbox-group input[type="checkbox"],
+.add form .radio-group input[type="radio"] {
+  display: none;
+}
+.add form .checkbox-group input[type="checkbox"] + label:before,
+.add form .radio-group input[type="radio"] + label:before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  border: 2px solid #8d778c;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.add form .checkbox-group input[type="checkbox"]:checked + label:before,
+.add form .radio-group input[type="radio"]:checked + label:before {
+  content: "\2713";
+  text-align: center;
+  font-size: 12px;
+  line-height: 14px;
+  background-color: #8d778c;
+  color: #fff;
+} */
+
+/* input[type=range] {
+    height: 34px;
+    -webkit-appearance: none;
+    margin: 10px 0;
+    width: 100%;
+}
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #002200;
+    background: #205928;
+    border-radius: 1px;
+    border: 1px solid #18D501;
+}
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 3px 3px 3px #00AA00;
+    border: 2px solid #83E584;
+    height: 23px;
+    width: 23px;
+    border-radius: 23px;
+    background: #439643;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #205928;
+}
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animate: 0.2s;
+    box-shadow: 1px 1px 1px #002200;
+    background: #205928;
+    border-radius: 1px;
+    border: 1px solid #18D501;
+}
+input[type=range]::-moz-range-thumb {
+    box-shadow: 3px 3px 3px #00AA00;
+    border: 2px solid #83E584;
+    height: 23px;
+    width: 23px;
+    border-radius: 23px;
+    background: #439643;
+    cursor: pointer;
+}
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 12px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+    background: #205928;
+    border: 1px solid #18D501;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #002200;
+}
+input[type=range]::-ms-fill-upper {
+    background: #205928;
+    border: 1px solid #18D501;
+    border-radius: 2px;
+    box-shadow: 1px 1px 1px #002200;
+}
+input[type=range]::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 3px 3px 3px #00AA00;
+    border: 2px solid #83E584;
+    height: 23px;
+    width: 23px;
+    border-radius: 23px;
+    background: #439643;
+    cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+    background: #205928;
+}
+input[type=range]:focus::-ms-fill-upper {
+    background: #205928;
+} */
+
+/* ///////////////////////////// */
+
+
+.add form input[type=submit]:hover {
+    color: #fff;
+    background: linear-gradient(90deg, rgba(115, 122, 142, 1) 0%, rgba(110, 69, 105, 1) 100%);
+    transition: all 0.5s;
+}
+
+
+/* //////////////////////////////////////////This below css added in index.css as global//////////////////////////////////////////// */
+
+/* form select {
+    cursor: pointer;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    font-size: 15px;
+}
+form select:valid{
+    color: #000;
+}
+select:required {
+    color: #8d778c;
+}
+option[value=""][disabled] {
+    display: none;
+}
+option {
+    color: black;
+}
+select option {
+    background: #434851;
+    color: white;
+}
+select {
+    background-image:
+        linear-gradient(45deg, transparent 50%, #8d778c 50%),
+        linear-gradient(135deg, #8d778c 50%, transparent 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 20px) calc(1em + -1px), calc(100% - 15px) calc(1em + -1px), calc(100% - 2.4em) 0.2em;
+    background-size: 5px 5px, 5px 5px, 0px 1.5em;
+    background-repeat: no-repeat;
+}
+select:focus {
+    background-image:
+        linear-gradient(45deg, #8d778c 50%, transparent 50%),
+        linear-gradient(135deg, transparent 50%, #8d778c 50%),
+        linear-gradient(to right, #ccc, #ccc);
+    background-position:  calc(100% - 15px) calc(1em + -2px), calc(100% - 20px) calc(1em + -2px), calc(100% - 2.4em) 0.2em;
+    background-size: 5px 5px, 5px 5px, 0px 1.5em;
+    background-repeat: no-repeat;
+    border-color: #8d778c;
+    outline: 0;
+} */
+
+
+@media screen and (max-width: 768px) {
+    .add{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .add{
+        padding: 40px;
+    }
+}

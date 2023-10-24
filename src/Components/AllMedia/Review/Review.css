@@ -1,0 +1,98 @@
+/* CSS for the Review Popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+}
+
+.popup-content {
+    width: calc(100vw - 65%);
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px 20px 0 20px;
+    position: relative;
+}
+
+.popup-text {
+    text-align: left;
+}
+
+
+.popup-content {
+    background-color: #ebebeb;
+    border: 0.05em solid white;
+    box-shadow: 3px 3px 15px -4px #46466f;
+    /* background: linear-gradient(180deg, rgb(152, 159, 171) 0%, rgb(230, 230, 230) 100%); */
+}
+.popup-content input, .popup-content textarea {
+    background-color: #fff;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #dad4d9;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    padding: 5px 10px;
+}
+.popup-content input:focus, .popup-content textarea:focus {
+    outline: 0;
+    border-bottom-color: #000;
+}
+.popup-content input:valid, .popup-content textarea:valid {
+    outline: 0;
+}
+.popup-content input::placeholder {
+    color: #8d778c;
+    font-size: 15px;
+}
+
+
+.popup textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+  
+.popup button.rvbt {
+    margin: auto;
+    margin-top: 100px;
+}
+
+.popup button:last-child {
+    margin-right: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+    transform: translateX(-12px) translateY(15px);
+}
+.popup button:last-child:hover {
+    transform: translateX(-12px) translateY(15px);
+}
+.popup button.fading {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+@media (max-width: 1200px) {
+    .popup-content {
+        width: calc(100vw - 10%);
+    }
+}
+@media (max-width: 664px) {
+    .popup-content {
+        width: 100%;
+        height: 100vh;
+        border-radius: 0px;
+    }
+    .popup button.rvbt {
+        margin-top: 40px;
+    }
+}

@@ -1,0 +1,11 @@
+.star-rating5 {
+    display: flex;
+    flex-direction: row;
+}
+  
+.star-rating5 svg {
+    width: 1em;
+    height: 1em;
+    padding-right: 3px;
+    color: #f1911b;
+}

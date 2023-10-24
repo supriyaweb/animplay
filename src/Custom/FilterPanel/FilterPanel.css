@@ -1,0 +1,32 @@
+/* Add this CSS to your existing ViewMedia.css or create a new CSS file */
+
+/* Style for the side panel */
+.side-panel {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 250px; /* Adjust width as needed */
+    background-color: #fff; /* Adjust background color */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media query to hide the side panel on mobile */
+  @media (max-width: 768px) {
+    .side-panel {
+      display: none;
+    }
+  }
+  
+  /* Adjust the main content area based on side panel visibility */
+  .main-container {
+    margin-left: 0; /* Adjust margin based on side panel width */
+  }
+  
+  @media (min-width: 769px) {
+    .main-container {
+      margin-left: 250px; /* Adjust margin based on side panel width */
+    }
+  }
+  

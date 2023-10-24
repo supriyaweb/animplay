@@ -1,0 +1,6 @@
+.wrap-login .card_button {
+    margin-top: 90px;
+}
+.wrap-login .wrap_form:before {
+    transform: translateX(203px) translateY(170px) scale(.4);
+}
