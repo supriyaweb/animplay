@@ -2,15 +2,17 @@
 
 This project is a Animation Streaming Project for all type of animation like- Anime, 2D and 3D animation.
 
-"To View This Project Properly-"\
-Runs the app with the command: npm start\
-Runs the local JSON server with the command: npx json-server --watch Data/db.json --port 5000\
-Admin Panel Access: Email= 'adminsupriya@gmail.com', Password= 'admin'
+**"To View This Project Properly-"**\
+Runs the app with the command: **npm start**\
+Runs the local JSON server with the command: **npx json-server --watch Data/db.json --port 5000**\
+Admin Panel Access: **Email= 'adminsupriya@gmail.com', Password= 'admin'**
 
 ## Demo Video to understand this ReactJS Project
 
 [![Watch the video](https://imgur.com/mCmGslT.png)](https://drive.google.com/file/d/1tg7stVjhc-wsK1R2CLvw51vAXYlewASu/view?usp=sharing)
 
+![Thank
+you\!](https://media.giphy.com/media/3o6ozuHcxTtVWJJn32/giphy.gif)/
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
