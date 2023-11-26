@@ -1,10 +1,10 @@
-# animplay React Project
+# ANIMPLAY React Project
 
 This project is a Animation Streaming Project for all type of animation like- Anime, 2D and 3D animation.
 
-"To View This Project Properly-"
-Runs the app with the command: npm start
-Runs the local JSON server with the command: npx json-server --watch Data/db.json --port 5000
+"To View This Project Properly-"\
+Runs the app with the command: npm start\
+Runs the local JSON server with the command: npx json-server --watch Data/db.json --port 5000\
 Admin Panel Access: Email= 'adminsupriya@gmail.com', Password= 'admin'
 
 ## Demo Video to understand this ReactJS Project
